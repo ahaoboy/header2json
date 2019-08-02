@@ -1,28 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <Header2Json></Header2Json>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+  import Header2Json from './components/Header2Json'
 
-export default {
-  name: "app",
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+      Header2Json
+    }
   }
-};
 </script>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #app {
+    width: 100%;
+    height: 100%;
+  }
 </style>
